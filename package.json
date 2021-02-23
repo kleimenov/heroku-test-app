@@ -1,0 +1,27 @@
+{
+  "name": "herokutest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm install ==only==dev ==noshrinkwrap && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleimenov/heroku-test-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kleimenov/heroku-test-app/issues"
+  },
+  "homepage": "https://github.com/kleimenov/heroku-test-app#readme"
+}
