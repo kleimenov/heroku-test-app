@@ -8,7 +8,11 @@ const App = () => {
   }, []);
 
   const getData = async () => {
-    const response = await fetch("http://localhost:3030/data");
+    const response = await fetch("/data", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      }});
     const data = await response.json();
     setData(data.gaugeData);
   };
