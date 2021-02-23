@@ -8,11 +8,7 @@ const App = () => {
   }, []);
 
   const getData = async () => {
-    const response = await fetch("https://hhcd-app.herokuapp.com/data", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json"
-      }});
+    const response = await fetch("https://hhcd-app.herokuapp.com/data");
     const data = await response.json();
     setData(data.gaugeData);
   };
