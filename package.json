@@ -13,11 +13,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build":"cd src && npm run build" ,
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3030",
+  "engines": {
+    "node": "10.x"},
   "eslintConfig": {
     "extends": [
       "react-app",
