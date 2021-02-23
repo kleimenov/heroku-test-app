@@ -10,9 +10,10 @@
     "path": "^0.12.7"
   },
   "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Server.js",
-    "heroku-postbuild": "npm run build"
+    "start": "node Server.js"
+    
   },
   "engines": {
     "node": "12.11.1"
