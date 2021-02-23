@@ -11,8 +11,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Server.js && cd client/src && npm start"
+    "start": "node Server.js",
+    "heroku-postbuild": "npm run build"
   },
+  "engines": {
+    "node": "12.11.1"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kleimenov/heroku-test-app.git"
